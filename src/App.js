@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {FocusRoot} from "@please/lrud";
+import Button from "./components/button";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FocusRoot>
+      <div className="App">
+        <div className="Game-list">
+          <Button text="Game 1"/>
+          <Button text="Game 2"/>
+          <Button text="Game 3"/>
+          <Button text="Game 4  "/>
+        </div>
+      </div>
+    </FocusRoot>
   );
 }
 
